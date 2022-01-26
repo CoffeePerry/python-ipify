@@ -5,7 +5,6 @@ tests.ipify.ipify
 All tests for our ipify.ipify module.
 """
 
-
 from socket import AF_INET, AF_INET6, inet_pton
 from unittest import TestCase
 

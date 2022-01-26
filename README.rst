@@ -1,16 +1,16 @@
 python-ipify
 ============
 
-The official client library for `ipify <https://www.ipify.org/>`_: *A Simple IP
+A fork from the official client library for `ipify <https://www.ipify.org/>`_: *A Simple IP
 Address API*.
 
-.. image:: https://img.shields.io/pypi/v/ipify.svg
+.. image:: https://img.shields.io/pypi/v/ipify-py.svg
     :alt: python-ipify Release
-    :target: https://pypi.python.org/pypi/ipify
+    :target: https://pypi.python.org/pypi/ipify-py
 
-.. image:: https://img.shields.io/pypi/dm/ipify.svg
+.. image:: https://img.shields.io/pypi/dm/ipify-py.svg
     :alt: python-ipify Downloads
-    :target: https://pypi.python.org/pypi/ipify
+    :target: https://pypi.python.org/pypi/ipify-py
 
 .. image:: https://img.shields.io/travis/rdegges/python-ipify.svg
     :alt: python-ipify Build
@@ -23,9 +23,11 @@ Address API*.
 Meta
 ----
 
-- Author: Randall Degges
-- Email: r@rdegges.com
-- Site: http://www.rdegges.com
+- Author: Simone Perini
+- Email: perinisimone98@gmail.com
+- Original Author: Randall Degges
+- Original Author's Email: r@rdegges.com
+- Original Author's Site: http://www.rdegges.com
 - Status: maintained, active
 
 
@@ -158,7 +160,7 @@ All library changes, in descending order.
 Version 1.0.1
 *************
 
-**Not yet released.**
+**Released January 26, 2022.**
 
 - Improving test to actually validate IP addresses.  Thanks to `@lethargilistic
   <https://github.com/lethargilistic>`_ for the pull request!
@@ -173,6 +175,7 @@ Version 1.0.1
 - Fixing minor style issues.  I'm really obsessed with code style / quality,
   don't judge me!
 - Adding Python 3.5 / 3.6 support.
+- Adding Python 3.10 support.
 
 
 Version 1.0.0

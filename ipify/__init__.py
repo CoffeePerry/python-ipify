@@ -23,9 +23,9 @@ For more information, visit the project website: https://www.ipify.org
 """
 
 
-__author__ = 'Randall Degges'
+__author__ = 'Simone Perini'
+__original_author__ = 'Randall Degges'
 __license__ = 'UNLICENSE'
-__version__ = '1.0.0'
-
+__version__ = '1.0.1'
 
 from .ipify import get_ip

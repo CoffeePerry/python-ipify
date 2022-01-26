@@ -5,7 +5,6 @@ ipify.ipify
 The module holds the main ipify library implementation.
 """
 
-
 from backoff import expo, on_exception
 from requests import get
 from requests.exceptions import RequestException
@@ -41,15 +40,16 @@ def get_ip():
     :rtype: string
     :returns: The public IP address of this machine as a string.
     :raises: ConnectionError if the request couldn't reach the ipify service,
-        or ServiceError if there was a problem getting the IP address from
-        ipify's service.
+        or ServiceError if there was a problem getting the IP address from ipify's service.
     """
     try:
         resp = _get_ip_resp()
     except RequestException:
-        raise ConnectionError("The request failed because it wasn't able to reach the ipify service. This is most likely due to a networking error of some sort.")
+        raise ConnectionError('The request failed because it wasn\'t able to reach the ipify service. '
+                              'This is most likely due to a networking error of some sort.')
 
     if resp.status_code != 200:
-        raise ServiceError('Received an invalid status code from ipify:' + str(resp.status_code) + '. The service might be experiencing issues.')
+        raise ServiceError('Received an invalid status code from ipify:' + str(resp.status_code) +
+                           '. The service might be experiencing issues.')
 
     return resp.text
