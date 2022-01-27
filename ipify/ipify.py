@@ -7,6 +7,7 @@ The module holds the main ipify library implementation.
 
 from backoff import expo, on_exception
 from requests import get
+from requests.status_codes import codes
 from requests.exceptions import RequestException
 
 from .exceptions import ConnectionError, ServiceError
@@ -48,8 +49,8 @@ def get_ip():
         raise ConnectionError('The request failed because it wasn\'t able to reach the ipify service. '
                               'This is most likely due to a networking error of some sort.')
 
-    if resp.status_code != 200:
-        raise ServiceError('Received an invalid status code from ipify:' + str(resp.status_code) +
-                           '. The service might be experiencing issues.')
+    if resp.status_code != codes.ok:
+        raise ServiceError(f'Received an invalid status code from ipify: {str(resp.status_code)}. '
+                           'The service might be experiencing issues.')
 
     return resp.text
