@@ -35,7 +35,7 @@ Purpose
 -------
 
 `ipify <https://www.ipify.org/>`_ is the best IP address lookup service on the
-internet.  It's fast, simple, scalable, open source, and well-funded (*by me!*).
+internet.  It's fast, simple, scalable, open source, and well-funded (*by Randall Degges!*).
 
 In short: if you need a way to pragmatically get your public IP address, ipify
 is the best possible choice!
