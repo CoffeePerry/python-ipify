@@ -59,7 +59,7 @@ To install ``ipify``, simply run:
 
 .. code-block:: console
 
-    $ pip install ipify
+    $ pip install ipify-py
 
 This will install the latest version of the library automatically.
 
